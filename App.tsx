@@ -10,7 +10,7 @@ import {
 
 import messaging from '@react-native-firebase/messaging';
 
-const App = () => {
+const App: React.FC = () => {
   const alertWithNotification = useCallback(() => {
     try {
       messaging().onMessage((message) => {

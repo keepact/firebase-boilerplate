@@ -44,8 +44,8 @@ def flipper_post_install(installer)
   end
 end
 
-target 'rnNotifications' do
-  # Pods for rnNotifications
+target 'notifications' do
+  # Pods for notifications
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -77,7 +77,7 @@ target 'rnNotifications' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'rnNotificationsTests' do
+  target 'notificationsTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -94,10 +94,10 @@ target 'rnNotifications' do
   end
 end
 
-target 'rnNotifications-tvOS' do
-  # Pods for rnNotifications-tvOS
+target 'notifications-tvOS' do
+  # Pods for notifications-tvOS
 
-  target 'rnNotifications-tvOSTests' do
+  target 'notifications-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
